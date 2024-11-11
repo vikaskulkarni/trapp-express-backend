@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/index.js",
-    "build": "tsc",
-    "dev": "ts-node-dev --respawn src/index.ts",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,17 +12,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.21.1",
-    "typescript": "^5.6.3",
-    "@types/cors": "^2.8.17",
-    "@types/express": "^5.0.0",
-    "@types/node": "^22.9.0",
-    "ts-node": "^10.9.2",
-    "ts-node-dev": "^2.0.0"
-  },
-  "engines": {
-    "node": "20.16.0",
-    "npm": "10.8.1"
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1"
   }
 }
